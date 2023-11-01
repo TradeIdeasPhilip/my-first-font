@@ -1,172 +1,244 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-	<title>Lorem ipsum</title>
-	<meta charset="UTF-8">
-	
-	<style type="text/css">
+  <head>
+    <title>My First Font</title>
+    <meta charset="UTF-8" />
 
-		body {
-			text-rendering: optimizeLegibility;
-			font-feature-settings: "kern";
-			-moz-font-feature-settings: "kern=1";
-			-ms-font-feature-settings: "kern";
-			-webkit-font-feature-settings: "kern";
-			-o-font-feature-settings: "kern";
-			
-			margin: 0 0 0 0;
-			padding: 0 0 0 0;
-		}
+    <style type="text/css">
+      body {
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "kern";
+        -moz-font-feature-settings: "kern=1";
+        -ms-font-feature-settings: "kern";
+        -webkit-font-feature-settings: "kern";
+        -o-font-feature-settings: "kern";
 
-		@font-face {
-			font-family: "My First FontSVG";
-			src: url("My First Font.svg#My First Font") format('svg');
-		}
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+      }
 
-		@font-face {
-			font-family: "My First FontOTF";
-			src: url("My First Font.otf") format('opentype');
-		}
+      @font-face {
+        font-family: "My First FontSVG";
+        src: url("My First Font.svg#My First Font") format("svg");
+      }
 
-		@font-face {
-			font-family: "My First FontTTF";
-			src: url("My First Font.ttf") format('truetype');
-		}
+      @font-face {
+        font-family: "My First FontOTF";
+        src: url("My First Font.otf") format("opentype");
+      }
 
-		@font-face {
-			font-family: "My First FontEOT"
-	 		src: url("My First Font.eot");
-		}
+      @font-face {
+        font-family: "My First FontTTF";
+        src: url("My First Font.ttf") format("truetype");
+      }
 
-	
-		h1 {
-			font-weight:normal;
-			margin: 10px 0 5px 0;
-			color: #afafaf;
-		}
+      @font-face {
+        font-family: "My First FontEOT";
+        src: url("My First Font.eot");
+      }
 
-		h2 {
-			font-weight:normal;
-			margin: 0 0 5px 0;
-			color: #afafaf;
-		}
-		
-		h3 {
-			font-weight:normal;
-			margin: 0 0 5px 0;
-			color: #afafaf;
-		}
-		
-		h4 {
-			font-weight:normal;
-			margin: 0 0 5px 0;
-			color: #afafaf;
-		}
-		
-		p {
-			margin: 0 0 5px 0;
-			color: #000000;
-		}
-		
-		div {
-			font-family: "My First FontEOT", "My First FontOTF", "My First FontTTF", "My First FontSVG";
-			margin: 0 0 30px 0;
-		}
-		
-		section {
-			padding-left: 25px;
-		}
+      h1 {
+        font-weight: normal;
+        margin: 10px 0 5px 0;
+        color: #afafaf;
+      }
 
-		h1.biggest {
-			font-size: 72pt;
-		}
-		
-		h1.bigger {
-			font-size: 58pt;
-		}
+      h2 {
+        font-weight: normal;
+        margin: 0 0 5px 0;
+        color: #afafaf;
+      }
 
-		h2.big {
-			font-size: 40pt;
-		}
-		
-		h3.small {
-			font-size: 32pt;
-		}
+      h3 {
+        font-weight: normal;
+        margin: 0 0 5px 0;
+        color: #afafaf;
+      }
 
-		h4.smaller {
-			font-size: 18pt;
-		}
+      h4 {
+        font-weight: normal;
+        margin: 0 0 5px 0;
+        color: #afafaf;
+      }
 
-		p.bigger {
-			font-size: 32pt;
-		}
+      p {
+        margin: 0 0 0.5em 0;
+        color: #000000;
+        text-indent: 1.25em;
+        text-align: justify;
+      }
 
-		p.big {
-			font-size: 24pt;
-		}
-		
-		p.small {
-			font-size: 18pt;
-		}
+      div {
+        font-family: "My First FontEOT", "My First FontOTF", "My First FontTTF",
+          "My First FontSVG";
+        margin: 0 0 30px 0;
+      }
 
-		p.smaller {
-			font-size: 12pt;
-		}
+      section {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
 
-		.swashes {
-			font-feature-settings: "swsh";	
-		}
-		
-		.alternates {	
-			font-feature-settings: "salt" 1;
-		}
-		
-		.smallcaps {
-			font-variant-caps: small-caps;
-			font-feature-settings: "smcp";
-		}
+      h1.biggest {
+        font-size: 72pt;
+      }
 
-		.capstosmallcaps {
-			font-variant-caps: all-small-caps;
-			font-feature-settings: "c2sc", "smcp";
-		}
-		
-		.stylisticset01 {
-			font-feature-settings: "ss01";
-		}
+      h1.bigger {
+        font-size: 58pt;
+      }
 
-		.onum {
-			font-variant-numeric: oldstyle-nums;
-			-moz-font-feature-settings: "onum";
-			-webkit-font-feature-settings: "onum";
-			font-feature-settings: "onum";
-		}
-	</style>
-	
-</head>
-<body>
-<section>
-	<div>
-		<h1 class="biggest">Lorem ipsum</h1>
-		<p class="bigger">Dolor sit amet!</p>
-	</div>
+      h2.big {
+        font-size: 40pt;
+      }
 
-	<div>
-		<h2 class="big">Hamburgefonstiv</h2>
-		<p class="big">My First Font</p>
-	</div>
+      h3.small {
+        font-size: 32pt;
+      }
 
-	<div>
-		<h4 class="smaller">Headline 16pt</h4>
-		<p class="smaller">The quick brown fox jumps over the lazy dog</p>	
-	</div>
+      h4.smaller {
+        font-size: 18pt;
+      }
 
-	<div>
-		<h4 class="smaller">Alphabet</h4>
-		<p class="smaller">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-		<p class="smaller">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-		<p class="smaller">0 1 2 3 4 5 6 7 8 9</p>
-	</div>
-</section>
-</body>
+      p.bigger {
+        font-size: 32pt;
+      }
+
+      p.big {
+        font-size: 24pt;
+      }
+
+      p.small {
+        font-size: 18pt;
+      }
+
+      p.smaller {
+        font-size: 12pt;
+      }
+
+      .swashes {
+        font-feature-settings: "swsh";
+      }
+
+      .alternates {
+        font-feature-settings: "salt" 1;
+      }
+
+      .smallcaps {
+        font-variant-caps: small-caps;
+        font-feature-settings: "smcp";
+      }
+
+      .capstosmallcaps {
+        font-variant-caps: all-small-caps;
+        font-feature-settings: "c2sc", "smcp";
+      }
+
+      .stylisticset01 {
+        font-feature-settings: "ss01";
+      }
+
+      .onum {
+        font-variant-numeric: oldstyle-nums;
+        -moz-font-feature-settings: "onum";
+        -webkit-font-feature-settings: "onum";
+        font-feature-settings: "onum";
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1 class="biggest">My First Font</h1>
+        <p class="bigger">
+          This is the first font I’ve created in a long time. A lot has changed
+          since I created bitmap fonts with
+          <a href="https://en.wikipedia.org/wiki/ResEdit">ResEdit</a>. I need to
+          catch up.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="big">Status</h2>
+        <p class="big">I’ve created a “Minimum Viable Product.”</p>
+        <p class="big">
+          Clearly there’s a lot of work to do to make this usable. The most
+          obvious problem is the kerning; the spacing between the letters is
+          inconsistent enough to make the font hard to read.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="big">Purpose</h2>
+        <p class="big">
+          <u>Curiosity</u>. I use fonts all the time in my web pages. I’m always
+          trying out new features. I want to know what this tech looks like to
+          the implementor.
+        </p>
+        <p class="big">
+          <u>Fun</u>. I can poke around at this stuff a little at a time. It’s
+          like doodling.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="big">Tools</h2>
+        <p class="big">
+          I created this font using
+          <a href="https://birdfont.org/">Birdfont</a>.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="big">Style</h2>
+        <p class="big">
+          This font was inspired by a standard 7 segment display. The digits are
+          pretty standard. The other characters have more freedom, but they keep
+          the basic style.
+        </p>
+        <p class="big">
+          The basic shape is a circle which I stretched to different lengths. I
+          tried to keep the widths the same, but I had trouble with the diagonal
+          lines.
+        </p>
+        <p class="big">
+          I would like to replace the basic shape with something more like a
+          line segment with round end caps. The end caps would not change
+          regardless of the line’s length. The end caps might be right
+          triangles, so four of them would fit together tightly.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="big">Source Code</h2>
+        <p class="big">
+          <a href="https://github.com/TradeIdeasPhilip/my-first-font"
+            >My First Font</a
+          >
+          on GitHub
+        </p>
+      </div>
+
+      <div>
+        <h2 class="big">Internacionalización</h2>
+        <p class="big">¡Mi corazón te pertenece!</p>
+        <p class="big">¿Dónde está el baño?</p>
+      </div>
+
+      <div>
+        <h4 class="smaller">Headline 16pt</h4>
+        <p class="smaller">The quick brown fox jumps over the lazy dog</p>
+      </div>
+
+      <div>
+        <h4 class="smaller">Alphabet</h4>
+        <p class="smaller">
+          a b c d e f g h i j k l m n o p q r s t u v w x y z
+        </p>
+        <p class="smaller">
+          A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+        </p>
+        <p class="smaller">0 1 2 3 4 5 6 7 8 9</p>
+      </div>
+    </section>
+  </body>
 </html>
