@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-    <title>Sevenish</title>
+    <title>My First Font</title>
     <meta charset="UTF-8" />
 
     <style type="text/css">
@@ -15,46 +15,44 @@
 
         margin: 0 0 0 0;
         padding: 0 0 0 0;
-
-        background-color: black;
       }
 
       @font-face {
-        font-family: "SevenishSVG";
-        src: url("Sevenish.svg#Sevenish") format("svg");
+        font-family: "My First FontSVG";
+        src: url("My First Font.svg#My First Font") format("svg");
       }
 
       @font-face {
-        font-family: "SevenishOTF";
-        src: url("Sevenish.otf") format("opentype");
+        font-family: "My First FontOTF";
+        src: url("My First Font.otf") format("opentype");
       }
 
       @font-face {
-        font-family: "SevenishTTF";
-        src: url("Sevenish.ttf") format("truetype");
+        font-family: "My First FontTTF";
+        src: url("My First Font.ttf") format("truetype");
       }
 
       @font-face {
-        font-family: "SevenishEOT";
-        src: url("Sevenish.eot");
+        font-family: "My First FontEOT";
+        src: url("My First Font.eot");
       }
 
       h1 {
         font-weight: normal;
         margin: 10px 0 5px 0;
-        color: #f22;
+        color: #afafaf;
       }
 
       h2 {
         font-weight: normal;
         margin: 0 0 5px 0;
-        color: rgb(97, 97, 255);
+        color: #afafaf;
       }
 
       h3 {
         font-weight: normal;
         margin: 0 0 5px 0;
-        color: #0f0;
+        color: #afafaf;
       }
 
       h4 {
@@ -65,13 +63,14 @@
 
       p {
         margin: 0 0 0.5em 0;
-        color: yellow;
+        color: #000000;
         text-indent: 1.25em;
         text-align: justify;
       }
 
       div {
-        font-family: "SevenishEOT", "SevenishOTF", "SevenishTTF", "SevenishSVG";
+        font-family: "My First FontEOT", "My First FontOTF", "My First FontTTF",
+          "My First FontSVG";
         margin: 0 0 30px 0;
       }
 
@@ -95,10 +94,6 @@
       h3.small {
         font-size: 32pt;
       }
-
-      h3.big {
-			font-size: 27pt;
-		}
 
       h4.smaller {
         font-size: 18pt;
@@ -153,7 +148,7 @@
   <body>
     <section>
       <div>
-        <h1 class="biggest">Sevenish</h1>
+        <h1 class="biggest">My First Font</h1>
         <p class="bigger">
           This is the first font I’ve created in a long time. A lot has changed
           since 1989 when I created bitmap fonts with
@@ -165,19 +160,13 @@
       <div>
         <h2 class="big">Status</h2>
         <p class="big">
-          I can call this “version 1.”
-          This font matches the picture in my head.
-          This release covers all of the necessities.
+          I’ve created a “Minimum Viable Product.” Clearly there’s a lot of work
+          remaining.
         </p>
         <p class="big">
-          I see some strange problems on my test web page that do not show up in the BirdFont editor!
-          &lt; and ^ have problems that are similar but not identical.  (&lt;, &gt; and ^ are all the same image rotated differently.) 
-          I need to investigate.
-        </p>
-          <p class="big">
-          Click
-          <a href="first-prototype/">here</a> for a look at the
-          prototype.
+          I recently fixed the spacing between the letters. You might have to
+          flush your cache to see the changes. TODO: Use Vite or a similar tool
+          to assign a unique name each time the font changes.
         </p>
       </div>
 
@@ -205,25 +194,20 @@
       <div>
         <h2 class="big">Style</h2>
         <p class="big">
-          This font was inspired — but not limited — by a 7 segment display. The
-          digits are pretty standard. The other characters have more freedom,
-          but they are all clearly part of a set.
+          This font was inspired by a 7 segment display. The digits are pretty
+          standard. The other characters have more freedom, but they keep the
+          basic style.
         </p>
         <p class="big">
-          The basic shape is a hexagon. The sides adjacent to a right angle are
-          all the same size. The remaining two sides can grow or shrink as
-          required. I looked at some other options for the ends, but this looks
-          the best at a number of different sizes.
+          The basic shape is a circle which I stretched to different lengths. I
+          tried to keep the widths the same, but I had trouble with the diagonal
+          lines.
         </p>
         <p class="big">
-          I still don't have the diagonal lines down perfect. I can't get the
-          length to be exactly what I need. With horizontal or vertical lines I
-          can just move my mouse until I get to the right place.
-        </p>
-        <p class="big">
-          I find bright letters on a dark background make this font the most
-          legible. With black on white consider using the CSS letter-spacing
-          property.
+          I would like to replace the basic shape with something more like a
+          line segment with round end caps. The end caps would not change
+          regardless of the line’s length. The end caps might be right
+          triangles, so four of them would fit together tightly.
         </p>
       </div>
 
@@ -247,21 +231,20 @@
       </div>
 
       <div>
-        <h2 class="big">All Glyphs</h2>
-        <h3 class="big">ASCII</h3>
-        <p class="big">
-          ! " # $ % &amp; ' ( ) * + , - . /
-          0 1 2 3 4 5 6 7 8 9
-          : ; &lt; = &gt; ? @
-          A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-          [ \ ] ^ _ `
+        <h4 class="smaller">Headline 16pt</h4>
+        <p class="smaller">The quick brown fox jumps over the lazy dog</p>
+      </div>
+
+      <div>
+        <h4 class="smaller">Alphabet</h4>
+        <p class="smaller">
           a b c d e f g h i j k l m n o p q r s t u v w x y z
-          { | } ~ 
         </p>
-        <h3 class="big">Beyond ASCII</h3>
-        <p class="big">
-          ¡ ¦ ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗
+        <p class="smaller">
+          A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
         </p>
-      </section>
+        <p class="smaller">0 1 2 3 4 5 6 7 8 9</p>
+      </div>
+    </section>
   </body>
 </html>
