@@ -21,14 +21,29 @@
 
       @font-face {
         font-family: "SevenishSVG";
+        src: url("SevenishBold.svg#Sevenish-Bold") format("svg");
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: "SevenishSVG";
         src: url("Sevenish.svg#Sevenish") format("svg");
       }
 
       @font-face {
         font-family: "SevenishOTF";
+        src: url("SevenishBold.otf") format("opentype");
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: "SevenishOTF";
         src: url("Sevenish.otf") format("opentype");
       }
 
+      @font-face {
+        font-family: "SevenishTTF";
+        src: url("SevenishBold.ttf") format("truetype");
+        font-weight: bold;
+      }
       @font-face {
         font-family: "SevenishTTF";
         src: url("Sevenish.ttf") format("truetype");
@@ -42,13 +57,13 @@
       h1 {
         font-weight: normal;
         margin: 10px 0 5px 0;
-        color: #f22;
+        color: yellow;
       }
 
       h2 {
         font-weight: normal;
         margin: 0 0 5px 0;
-        color: rgb(97, 97, 255);
+        color: #f22;
       }
 
       h3 {
@@ -65,7 +80,7 @@
 
       p {
         margin: 0 0 0.5em 0;
-        color: yellow;
+        color: rgb(97, 97, 255);
         text-indent: 1.25em;
         text-align: justify;
       }
@@ -166,8 +181,13 @@
       <div>
         <h2 class="big">Status</h2>
         <p class="big">
-          I can call this “version 1.” This font matches the picture in my head.
+          This font matches the picture in my head!
           This release covers all of the necessities.
+        </p>
+        <p class="big">
+          <b>Bold</b> is a work in progress.
+          I have created all of the glyphs that <b>only</b> use horizontal and vertical lines.
+          This style is working so I will continue.
         </p>
         <p class="big">
           Click
@@ -178,14 +198,15 @@
 
       <div>
         <h2 class="big">Purpose</h2>
+        <h3 class="big">Curiosity</h3>
         <p class="big">
-          <u>Curiosity</u>. I use fonts all the time in my web pages. I’m always
-          trying out new features. I want to know what this tech looks like to
-          the implementor.
+          I use fonts all the time in my web pages. I’m always trying out new
+          features. I want to know what this tech looks like to the implementor.
         </p>
+        <h3 class="big">Fun</h3>
         <p class="big">
-          <u>Fun</u>. I can poke around at this stuff a little at a time. It’s
-          like doodling.
+          I can poke around at this stuff a little at a time. It’s like
+          doodling.
         </p>
       </div>
 
@@ -254,6 +275,56 @@
           ¡ ¦ ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗
         </p>
       </div>
+
+      <div>
+        <h2 class="big"><a name="Bold"></a>Bold</h2>
+        <p class="big">
+          <b>The</b> quick <b>brown</b> fox <b>jumps</b> over <b>the</b> lazy
+          <b>dog.</b>
+        </p>
+        <p class="big">
+          The <b>quick</b> brown <b>fox</b> jumps <b>over</b> the
+          <b>lazy</b> dog.
+        </p>
+        <h3 class="big">Background Color</h3>
+        <p class="big" style="background-color: pink; color: red">
+          A <b>dark</b> color <b>on</b> a <b>light</b> background
+          <b>generally</b> makes <b>the</b> font-weight <b>more</b> obvious.
+        </p>
+        <p class="big" style="background-color: lightcyan; color: blue">
+          The <b>quick</b> brown <b>fox</b> jumps <b>over</b> the
+          <b>lazy</b> dog.
+        </p>
+        <p class="big" style="color: lightcyan; background-color: blue">
+          The <b>quick</b> brown <b>fox</b> jumps <b>over</b> the
+          <b>lazy</b> dog.
+        </p>
+        <p class="big" style="background-color: beige; color: darkgray">
+          <b>The</b> quick <b>brown</b> fox <b>jumps</b> over <b>the</b> lazy
+          <b>dog.</b>
+        </p>
+        <p class="big" style="color: beige; background-color: darkgray">
+          <b>The</b> quick <b>brown</b> fox <b>jumps</b> over <b>the</b> lazy
+          <b>dog.</b>
+        </p>
+        <h3 class="big">All</h3>
+        <p class="big">
+          <b>
+            ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; =
+            &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^
+            _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ ¡ ¦
+            ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗
+          </b>
+        </p>
+      </div>
+      TODO:
+      italic - explain that I tried and it wasn't interesting or better than
+      what the computercould do automatically - curves were barely noticible,
+      Hawaiʻian accent - make it look better - maybe make the bottom part
+      smaller - especially on the right, tiny corner pieces in bold font - look
+      out of place - make them bigger, non bold ^ is messed up on the right side
+      again., make the accented capital letters shorter - currently they go over
+      the top margin show and state that bold is the same width as regular.
     </section>
   </body>
 </html>

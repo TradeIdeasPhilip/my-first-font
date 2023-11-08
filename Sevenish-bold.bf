@@ -46,8 +46,8 @@
 
 <background scale="1" />
 
-<base_filename>Sevenish</base_filename>
-<base_filename_mac>Sevenish Mac</base_filename_mac>
+<base_filename>SevenishBold</base_filename>
+<base_filename_mac>SevenishBold Mac</base_filename_mac>
 <export_ttf_font>true</export_ttf_font>
 <export_otf_font>true</export_otf_font>
 <export_eot_font>false</export_eot_font>
@@ -1106,7 +1106,7 @@
 			<path data="S -13.37584,34.03345 D -11.75808,36.68261 -6.67051,43.78748 -3.92044,47.23806 T D -1.17038,50.68863 4.67858,57.30609 6.95001,59.53678 T D 9.22143,61.76747 12.40554,64.02108 12.86776,63.72519 T D 13.32998,63.4293 11.98403,59.99894 10.36628,57.34979 T D 8.74853,54.70064 3.66098,47.59575 0.91091,44.14518 T D -1.83916,40.69461 -7.68811,34.07715 -9.95956,31.84645 T D -12.23098,29.61577 -15.41509,27.36214 -15.87731,27.65804 T D -16.33953,27.95394 -14.99358,31.38429 -13.37584,34.03345 T" />
 		</layer>
 	</glyph>
-	<glyph id="2" left="-34" right="68">
+	<glyph id="2" left="-34" right="34.19915">
 		<layer name="Layer" visible="true">
 			<path data="R -16,-20 K -22,-26 K -28,-20 K -28,64 K -22,70 K -16,64 K -16,-20" />
 			<path data="R -2.80085,8.19615 K -10.99701,6 K -13.19316,14.19615 K 17.80684,67.88973 K 26.00299,70.08588 K 28.19915,61.88973 K -2.80085,8.19615" />
