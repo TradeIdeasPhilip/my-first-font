@@ -2726,7 +2726,7 @@
 	<glyph id="3" left="-10" right="21.79899">
 		<layer name="Layer" visible="true">
 			<path data="R 15.79899,67.31371 K 4.48528,56 K -4,56 K -4,64.48528 K 7.31371,75.79899 K 15.79899,75.79899 K 15.79899,67.31371" />
-			<path data="R 12,52 K 18,46 K 12,40 K 0,40 K -6,46 K 0,52 K 12,52" />
+			<path data="R 8,52 K 14,46 K 8,40 K 0,40 K -6,46 K 0,52 K 8,52" />
 		</layer>
 	</glyph>
 </collection>
