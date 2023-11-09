@@ -164,6 +164,36 @@
         -webkit-font-feature-settings: "onum";
         font-feature-settings: "onum";
       }
+
+      .interleaved {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .interleaved > p {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .interleaved > p:nth-child(2) {
+        font-weight: bold;
+        color: violet;
+      }
+
+      .flash {
+        animation: flash 0.667s linear infinite;
+      }
+
+      @keyframes flash {
+        0%,
+        50% {
+          font-weight: normal;
+        }
+        50.1%,
+        100% {
+          font-weight: bold;
+        }
+      }
     </style>
   </head>
   <body>
@@ -181,13 +211,13 @@
       <div>
         <h2 class="big">Status</h2>
         <p class="big">
-          This font matches the picture in my head!
-          This release covers all of the necessities.
+          This font matches the picture in my head! This release covers all of
+          the necessities.
         </p>
         <p class="big">
-          <b>Bold</b> is a work in progress.
-          I have created all of the glyphs that <b>only</b> use horizontal and vertical lines.
-          This style is working so I will continue.
+          <b>Bold</b> is a work in progress. I have created all of the glyphs
+          that <b>only</b> use horizontal and vertical lines. This style is
+          working so I will continue.
         </p>
         <p class="big">
           Click
@@ -251,13 +281,18 @@
           >
           on GitHub
         </p>
-        <p class="big">If you want to know which glyphs changed in each release, compare the *.svg versions of the fonts.</p>
-        </div>
+        <p class="big">
+          If you want to know which glyphs changed in each release, compare the
+          *.svg versions of the fonts.
+        </p>
+      </div>
 
       <div>
         <h2 class="big">Internacionalización</h2>
         <p class="big">¿Dónde está el baño?</p>
-        <p class="big" style="text-transform: uppercase;">¿Dónde está el baño?</p>
+        <p class="big" style="text-transform: uppercase">
+          ¿Dónde está el baño?
+        </p>
         <p class="big" style="font-variant-caps: small-caps">
           ¿Dónde está el baño?
         </p>
@@ -319,14 +354,60 @@
             ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗
           </b>
         </p>
+        <h3 class="big">The Size Remains the Same</h3>
+        <p class="big">
+          Huge <span class="flash">sale</span> this
+          <span class="flash">Sunday</span> only!
+        </p>
+
+        <div class="interleaved" style="line-height: 3">
+          <p class="big">
+            Notice that the
+            <span style="color: violet; font-weight: bold">bold</span> and
+            normal glyphs all have the same size. I.e. making something bold
+            doesn’t change its size or cause anything else to move around. El
+            veloz zorro marrón salta sobre el perro perezoso. 12 + 34 - 56 ⨉ 78
+            ÷ 90 = ?
+          </p>
+          <p class="big"  style="margin-top: 1.25em">
+            Notice that the bold and
+            <span style="color: rgb(97, 97, 255); font-weight: normal"
+              >normal</span
+            >
+            glyphs all have the same size. I.e. making something bold doesn’t
+            change its size or cause anything else to move around. El veloz
+            zorro marrón salta sobre el perro perezoso. 12 + 34 - 56 ⨉ 78 ÷ 90 =
+            ?
+          </p>
+        </div>
+
+        <div class="interleaved">
+          <p class="big">
+            Notice that the
+            <span style="color: violet; font-weight: bold">bold</span> and
+            normal glyphs all have the same size.  ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; =
+            &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^
+            _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ ¡ ¦
+            ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗
+          </p>
+          <p class="big"style="z-index: -1;">
+            Notice that the bold and
+            <span style="color: rgb(97, 97, 255); font-weight: normal"
+              >normal</span
+            >
+            glyphs all have the same size.  ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; =
+            &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^
+            _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ ¡ ¦
+            ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗
+          </p>
+        </div>
       </div>
-      TODO:
-      italic - explain that I tried and it wasn't interesting or better than
-      what the computercould do automatically - curves were barely noticible,
-      tiny corner pieces in bold font - look
-      out of place - make them bigger, 
-      show and state that bold is the same width as regular.
-      The right side of the ^ is broken again - in a slightly different way.
+      TODO: italic - explain that I tried and it wasn't interesting or better
+      than what the computercould do automatically - curves were barely
+      noticible, tiny corner pieces in bold font - look out of place - make them
+      bigger, show and state that bold is the same width as regular. The right
+      side of the ^ is broken again - in a slightly different way. What's wrong
+      with ⨉? I thought I created that character, but I don't see it.
 
       <!--
         Well, I'm running down the road tryin' to loosen my load
