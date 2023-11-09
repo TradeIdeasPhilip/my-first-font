@@ -369,7 +369,7 @@
             veloz zorro marrón salta sobre el perro perezoso. 12 + 34 - 56 ⨉ 78
             ÷ 90 = ?
           </p>
-          <p class="big"  style="margin-top: 1.25em">
+          <p class="big" style="margin-top: 1.25em">
             Notice that the bold and
             <span style="color: rgb(97, 97, 255); font-weight: normal"
               >normal</span
@@ -385,29 +385,64 @@
           <p class="big">
             Notice that the
             <span style="color: violet; font-weight: bold">bold</span> and
-            normal glyphs all have the same size.  999:::;;; ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; =
-            &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^
-            _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ ¡ ¦
-            ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗
+            normal glyphs all have the same size. 999:::;;; ! " # $ % &amp; ' (
+            ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ? @ A B C D E F G
+            H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i
+            j k l m n o p q r s t u v w x y z { | } ~ ¡ ¦ ¿ Á É Í Ñ Ó × Ú á é í
+            ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗
           </p>
-          <p class="big"style="z-index: -1;">
+          <p class="big" style="z-index: -1">
             Notice that the bold and
             <span style="color: rgb(97, 97, 255); font-weight: normal"
               >normal</span
             >
-            glyphs all have the same size.  999:::;;; ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; =
-            &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^
-            _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ ¡ ¦
-            ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗
+            glyphs all have the same size. 999:::;;; ! " # $ % &amp; ' ( ) * + ,
+            - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ? @ A B C D E F G H I J K
+            L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m
+            n o p q r s t u v w x y z { | } ~ ¡ ¦ ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú
+            Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗
           </p>
         </div>
+        <p class="big">
+          Buggy example:
+          <img
+            src="Samples/Colon sizes do not match.png"
+            style="
+              height: 1.25em;
+              outline-style: dashed;
+              outline-width: 0.1em;
+              outline-offset: 0.1em;
+              margin: 0.2em 0.2em -0.1em 0.2em;
+              outline-color: red;
+              border-radius: 0.5em;
+            "
+            alt="The two versions of the text are not lined up.  It gets worse with each colon."
+          />. After fixing the size of the bold colon:
+          <img
+            src="Samples/Colon sizes fixed.png"
+            style="
+              height: 1.25em;
+              outline-style: dashed;
+              outline-width: 0.1em;
+              outline-offset: 0.1em;
+              margin: 0.2em 0.2em -0.1em 0.2em;
+              outline-color: green;
+              border-radius: 0.5em;
+            "
+            alt="The bold and normal text are perfectly lined up."
+          />.
+        </p>
       </div>
       TODO: italic - explain that I tried and it wasn't interesting or better
-      than what the computercould do automatically - curves were barely
-      noticible, tiny corner pieces in bold font - look out of place - make them
-      bigger, show and state that bold is the same width as regular. The right
-      side of the ^ is broken again - in a slightly different way. What's wrong
-      with ⨉? I thought I created that character, but I don't see it.
+      than what the computer could do automatically - curves were barely
+      noticeable and looked bad - can I get a screenshot?, tiny corner pieces in
+      bold font - look out of place - make them bigger, show and state that bold
+      is the same width as regular. The right side of the ^ is broken again - in
+      a slightly different way. What's wrong with ⨉? I thought I created that
+      character, but I don't see it. Something's wrong with the bold versions of
+      [ \ ] - It's probably the last one - that's where I see the problem - but
+      it might have been caused by one of the previous chars. Left side of bold
+      D. Adjust the normal ▒ to match the bold one.
 
       <!--
         Well, I'm running down the road tryin' to loosen my load
