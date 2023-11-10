@@ -433,18 +433,16 @@
           />.
         </p>
       </div>
-      TODO: italic - explain that I tried and it wasn't interesting or better
-      than what the computer could do automatically - curves were barely
-      noticeable and looked bad - can I get a screenshot?, tiny corner pieces in
-      bold font - look out of place - make them bigger, show and state that bold
-      is the same width as regular. The right side of the ^ is broken again - in
+      <!--
+      TODO:  tiny corner pieces in
+      bold font - look out of place - make them bigger. The right side of the ^ is broken again - in
       a slightly different way. What's wrong with ⨉? I thought I created that
       character, but I don't see it. Something's wrong with the bold versions of
       [ \ ] - It's probably the last one - that's where I see the problem - but
       it might have been caused by one of the previous chars. Left side of bold
       D. Adjust the normal ▒ to match the bold one.
+      Add the ° character (degree symbol) now that I'm using it in this document!
 
-      <!--
         Well, I'm running down the road tryin' to loosen my load
         I've got seven women on my mind
         Four that wanna own me, two that wanna stone me
@@ -452,6 +450,57 @@
 
         How do I add options like the slash through the 0?
       -->
+
+      <div>
+        <h2 class="big"><a name="Italic"></a>Italic</h2>
+        <p class="big">
+          I looked into an italic version of this font. Here's something I
+          created with diagonal lines.
+        </p>
+        <center>
+          <img
+            src="Samples/Italic Big Flat.png"
+            style="max-width: 90vw; max-height: 90vmin"
+          />
+        </center>
+        <p class="big">
+          That looks good, <i>but I get a similar effect for <b>free</b>.</i>
+        </p>
+        <p class="big">
+          Next I tried some curves. I kept the pointy ends exactly the same.
+          Those are 45-45-90 triangles. The short sides are 3 grid squares long
+          and all 45° from a cardinal direction. But the tops are now offset
+          from the bottoms. The idea was to use Bézier curves to connect to tops
+          and bottoms, instead of straight line segments. The idea was to make
+          the top and bottom of each vertical segment straight, just like the
+          regular version. Then to curve in the middle to make the top and
+          bottom meet.
+        </p>
+        <center>
+          <img
+            src="Samples/Italic Big Curves.png"
+            style="max-width: 90vw; max-height: 90vmin"
+          />
+        </center>
+        <p class="big">
+          Some versions looked amusing when they were huge. But as they got
+          smaller, they just looked like imperfect hexagons.
+        </p>
+        <center>
+          <img
+            src="Samples/Italic Small.png"
+            style="max-width: 90vw; max-height: 90vmin"
+          />
+        </center>
+        <p class="big">
+          These two approaches were both dead ends. For now I can use the
+          automatic/free italics. But I would like to revisit my first
+          <a href="./first-prototype/">prototype</a>. Those ovals gave the font
+          a very round feeling, perfect for an italic font. I'd lay the ovals
+          out in the same basic shape as the hexagons, above. I.e. horizontal
+          lines slide and vertical lines tilt.
+        </p>
+      </div>
     </section>
   </body>
 </html>
