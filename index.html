@@ -136,35 +136,6 @@
         font-size: 12pt;
       }
 
-      .swashes {
-        font-feature-settings: "swsh";
-      }
-
-      .alternates {
-        font-feature-settings: "salt" 1;
-      }
-
-      .smallcaps {
-        font-variant-caps: small-caps;
-        font-feature-settings: "smcp";
-      }
-
-      .capstosmallcaps {
-        font-variant-caps: all-small-caps;
-        font-feature-settings: "c2sc", "smcp";
-      }
-
-      .stylisticset01 {
-        font-feature-settings: "ss01";
-      }
-
-      .onum {
-        font-variant-numeric: oldstyle-nums;
-        -moz-font-feature-settings: "onum";
-        -webkit-font-feature-settings: "onum";
-        font-feature-settings: "onum";
-      }
-
       .interleaved {
         display: grid;
         grid-template-columns: 1fr;
@@ -371,7 +342,7 @@
             <br />
             2^2 = 2⨉2 = 2+2
             <br />
-            (2 > 3) && (3 < 2)
+            (2 &lt; 3) && (3 &gt; 2)
           </p>
           <p class="big" style="margin-top: 1.25em">
             Notice that the bold and
@@ -444,8 +415,6 @@
       <!--
       TODO:  tiny corner pieces in
       bold font - look out of place - make them bigger. 
-      What's wrong with ⨉? I thought I created that character, but I don't see it.
-        It looks like there's more than one times sign in unicode!
       Add the ° character (degree symbol) now that I'm using it in this document!
       Add options like the slash through the 0.
 
