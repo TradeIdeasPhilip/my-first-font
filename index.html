@@ -21,37 +21,52 @@
 
       @font-face {
         font-family: "SevenishSVG";
-        src: url("SevenishBold.svg#Sevenish-Bold") format("svg");
+        src: url("Sevenish-black.svg?v1#Sevenish-Black") format("svg");
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "SevenishSVG";
+        src: url("Sevenish-bold.svg?v1#Sevenish-Bold") format("svg");
         font-weight: bold;
       }
       @font-face {
         font-family: "SevenishSVG";
-        src: url("Sevenish.svg#Sevenish") format("svg");
+        src: url("Sevenish.svg?v1#Sevenish") format("svg");
       }
 
       @font-face {
         font-family: "SevenishOTF";
-        src: url("SevenishBold.otf") format("opentype");
+        src: url("Sevenish-black.otf?v1") format("opentype");
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "SevenishOTF";
+        src: url("Sevenish-bold.otf?v1") format("opentype");
         font-weight: bold;
       }
       @font-face {
         font-family: "SevenishOTF";
-        src: url("Sevenish.otf") format("opentype");
+        src: url("Sevenish.otf?v1") format("opentype");
       }
 
       @font-face {
         font-family: "SevenishTTF";
-        src: url("SevenishBold.ttf") format("truetype");
+        src: url("Sevenish-black.ttf?v1") format("truetype");
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "SevenishTTF";
+        src: url("Sevenish-bold.ttf?v1") format("truetype");
         font-weight: bold;
       }
       @font-face {
         font-family: "SevenishTTF";
-        src: url("Sevenish.ttf") format("truetype");
+        src: url("Sevenish.ttf?v1") format("truetype");
       }
 
       @font-face {
         font-family: "SevenishEOT";
-        src: url("Sevenish.eot");
+        src: url("Sevenish.eot?v1");
       }
 
       h1 {
@@ -151,18 +166,31 @@
         color: violet;
       }
 
+      .interleaved > p:nth-child(3) {
+        font-weight: 900;
+        color: whitesmoke;
+      }
+
       .flash {
-        animation: flash 0.667s linear infinite;
+        animation: flash 1.333s linear infinite;
       }
 
       @keyframes flash {
         0%,
-        50% {
+        25% {
           font-weight: normal;
         }
-        50.1%,
-        100% {
+        25.1%,
+        50% {
           font-weight: bold;
+        }
+        50.1%,
+        75% {
+          font-weight: normal;
+        }
+        75.1%,
+        100% {
+          font-weight: 900;
         }
       }
     </style>
@@ -191,11 +219,20 @@
         <p class="big">
           ¡ ¦ ° ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗ ⨉
         </p>
-      </div>
-
-      <div>
-        <h2 class="big">Status</h2>
-        <p class="big">Regular and bold are both in good shape.</p>
+        <h3 class="big">Bold (font-weight: 700)</h3>
+        <p class="big" style="font-weight: 700">
+          ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt;
+          ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a
+          b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ ¡ ¦ ° ¿ Á É
+          Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗ ⨉
+        </p>
+        <h3 class="big">Black (font-weight: 900)</h3>
+        <p class="big" style="font-weight: 900">
+          ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt;
+          ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a
+          b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ ¡ ¦ ° ¿ Á É
+          Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗ ⨉
+        </p>
       </div>
 
       <div>
@@ -224,9 +261,9 @@
       <div>
         <h2 class="big">Style</h2>
         <p class="big">
-          This font was inspired by — but not limited to — a 7 segment display. The
-          digits are pretty standard. The other characters have more freedom,
-          but they are all clearly part of a set.
+          This font was inspired by — but not limited to — a 7 segment display.
+          The digits are pretty standard. The other characters have more
+          freedom, but they are all clearly part of a set.
         </p>
         <p class="big">
           The basic shape is a hexagon. The sides adjacent to a right angle are
@@ -275,19 +312,18 @@
       </div>
 
       <div>
-        <h2 class="big"><a name="Bold"></a>Bold</h2>
+        <h2 class="big"><a name="Bold"></a>Bold and Black</h2>
         <p class="big">
-          <b>The</b> quick <b>brown</b> fox <b>jumps</b> over <b>the</b> lazy
-          <b>dog.</b>
-        </p>
-        <p class="big">
-          The <b>quick</b> brown <b>fox</b> jumps <b>over</b> the
-          <b>lazy</b> dog.
+          The <b>quick</b> <span style="font-weight: 900">brown</span> fox
+          <b>jumps</b> <span style="font-weight: 900">over</span> the
+          <b>lazy</b> <span style="font-weight: 900">dog</span>.
         </p>
         <h3 class="big">Background Color</h3>
         <p class="big" style="background-color: pink; color: red">
-          A <b>dark</b> color <b>on</b> a <b>light</b> background
-          <b>generally</b> makes <b>the</b> font-weight <b>more</b> obvious.
+          A <b>dark</b> <span style="font-weight: 900">color</span> on <b>a</b>
+          <span style="font-weight: 900">light</span> background <b>often</b>
+          <span style="font-weight: 900">makes</span> the <b>font-weight</b>
+          <span style="font-weight: 900">more</span> obvious.
         </p>
         <p class="big" style="background-color: lightcyan; color: blue">
           The <b>quick</b> brown <b>fox</b> jumps <b>over</b> the
@@ -305,43 +341,38 @@
           <b>The</b> quick <b>brown</b> fox <b>jumps</b> over <b>the</b> lazy
           <b>dog.</b>
         </p>
-        <h3 class="big">All</h3>
-        <p class="big">
-          <b>
-            ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; =
-            &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^
-            _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ ¡ ¦
-            ° ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗ ⨉
-          </b>
-        </p>
         <h3 class="big">The Size Remains the Same</h3>
         <p class="big">
           Huge <span class="flash">sale</span> this
           <span class="flash">Sunday</span> only!
         </p>
 
-        <div class="interleaved" style="line-height: 3">
+        <div class="interleaved" style="line-height: 4.25">
           <p class="big">
-            Notice that the
-            <span style="color: violet; font-weight: bold">bold</span> and
-            normal glyphs all have the same size. I.e. making something bold
-            doesn’t change its size or cause anything else to move around. El
-            veloz zorro marrón salta sobre el perro perezoso. 12 + 34 - 56 ⨉ 78
-            ÷ 90 = ?
+            Notice that the <u>normal</u>, bold and black glyphs all have the
+            same size. I.e. making something bold doesn’t change its size or
+            cause anything else to move around. El veloz zorro marrón salta
+            sobre el perro perezoso. 12 + 34 - 56 ⨉ 78 ÷ 90 = ?
             <br />
             2^2 = 2⨉2 = 2+2
             <br />
             (2 &lt; 3) && (3 &gt; 2)
           </p>
           <p class="big" style="margin-top: 1.25em">
-            Notice that the bold and
-            <span style="color: rgb(97, 97, 255); font-weight: normal"
-              >normal</span
-            >
-            glyphs all have the same size. I.e. making something bold doesn’t
-            change its size or cause anything else to move around. El veloz
-            zorro marrón salta sobre el perro perezoso. 12 + 34 - 56 ⨉ 78 ÷ 90 =
-            ?
+            Notice that the normal, <u>bold</u> and black glyphs all have the
+            same size. I.e. making something bold doesn’t change its size or
+            cause anything else to move around. El veloz zorro marrón salta
+            sobre el perro perezoso. 12 + 34 - 56 ⨉ 78 ÷ 90 = ?
+            <br />
+            2^2 = 2⨉2 = 2+2
+            <br />
+            (2 &lt; 3) && (3 &gt; 2)
+          </p>
+          <p class="big" style="margin-top: 2.5em">
+            Notice that the normal, bold and <u>black</u> glyphs all have the
+            same size. I.e. making something bold doesn’t change its size or
+            cause anything else to move around. El veloz zorro marrón salta
+            sobre el perro perezoso. 12 + 34 - 56 ⨉ 78 ÷ 90 = ?
             <br />
             2^2 = 2⨉2 = 2+2
             <br />
@@ -351,24 +382,28 @@
 
         <div class="interleaved">
           <p class="big">
-            Notice that the
-            <span style="color: violet; font-weight: bold">bold</span> and
-            normal glyphs all have the same size. 999:::;;; ! " # $ % &amp; ' (
-            ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ? @ A B C D E F G
-            H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i
-            j k l m n o p q r s t u v w x y z { | } ~ ¡ ¦ ° ¿ Á É Í Ñ Ó × Ú á é
-            í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗ ⨉
+            Notice that the black, bold and normal glyphs all have the same
+            size. 999:::;;; ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8
+            9 : ; &lt; = &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W
+            X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y
+            z { | } ~ ¡ ¦ ° ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ”
+            ‼ ⁈ ⁉ ▒ ➗ ⨉
           </p>
-          <p class="big" style="z-index: -1">
-            Notice that the bold and
-            <span style="color: rgb(97, 97, 255); font-weight: normal"
-              >normal</span
-            >
-            glyphs all have the same size. 999:::;;; ! " # $ % &amp; ' ( ) * + ,
-            - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ? @ A B C D E F G H I J K
-            L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m
-            n o p q r s t u v w x y z { | } ~ ¡ ¦ ° ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷
-            ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ” ‼ ⁈ ⁉ ▒ ➗ ⨉
+          <p class="big" style="display: none; z-index: -1">
+            Notice that the black, bold and normal glyphs all have the same
+            size. 999:::;;; ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8
+            9 : ; &lt; = &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W
+            X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y
+            z { | } ~ ¡ ¦ ° ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ”
+            ‼ ⁈ ⁉ ▒ ➗ ⨉
+          </p>
+          <p class="big" style="z-index: -2">
+            Notice that the black, bold and normal glyphs all have the same
+            size. 999:::;;; ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8
+            9 : ; &lt; = &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W
+            X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y
+            z { | } ~ ¡ ¦ ° ¿ Á É Í Ñ Ó × Ú á é í ñ ó ÷ ú Ō ʻ ‐ ‑ ‒ – — ‘ ’ “ ”
+            ‼ ⁈ ⁉ ▒ ➗ ⨉
           </p>
         </div>
         <p class="big">
@@ -407,6 +442,7 @@
       Add options like the slash through the 0.
       ¡, é, Í, I, g, i, j, l, m, ʻ, ‼, ⁈, ⁉, ▒ and ¦ have strange widths - Maybe others - all should be integers.
       Lower case S seems asymmetric - the top and bottom are different - across all 3 versions.   
+      Redo the * in the regular font, it's still a copy of what was in the bold font.
 
       Add a karaoke example:
         Well, I'm running down the road tryin' to loosen my load
